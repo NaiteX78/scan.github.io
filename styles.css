@@ -1,0 +1,92 @@
+body{
+    background-color: #2e2138;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.scans-logo{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.title-name{
+    flex: 1;
+    margin-left: 100px;
+}
+
+.head{
+    width: 100%; /* S'adapte à la largeur de l'écran */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: auto;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #2e2138;
+}
+
+.search{
+    color: white;
+    width: auto;
+    height: 75px;
+    margin-right: 200px;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: large;
+    background-color: #2e2138;
+}
+::placeholder{
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.join-us{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #2e2138;
+}
+a:hover{
+    background-color: #2e2138;
+}
+
+.network-logo{
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: auto;
+    transition: opacity 1s ease-in-out; /* Transition pour un fondu enchaîné */
+    opacity: 0; /* L'image est invisible par défaut */
+}
+
+.network-logo.visible {
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    0% {
+      top: -100%; /* Commence au-dessus du conteneur */
+      opacity: 0;
+    }
+    50% {
+      top: 0; /* L'image atteint sa position normale */
+      opacity: 1;
+    }
+    100% {
+      top: 100%; /* L'image descend en dehors du conteneur */
+      opacity: 0;
+    }
+}
